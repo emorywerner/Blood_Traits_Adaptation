@@ -27,12 +27,3 @@ echo -e "SNP" "\t" "CLST" "\t" "A1" "\t" "A2" "\t" "FRQ" "\t" "POS" "\t" "CHR" "
 cat /broad/sankaranlab/elw/MathiesonAF/sep26.filtered.freqs/${phenos}.txt | awk '{print $1, $6, $4, $5, $7, $3, $2}' | sed 's/ /\t/g' >> ${dir}/freq/${phenos}.freq.txt
 
 
-
-
-#echo -e "SNP" "\t" "CLST" "\t" "A1" "\t" "A2" "\t" "FRQ" "\t" "POS" "\t" "CHR" "\t"  > /broad/sankaranlab/elw/MathiesonAF/PolyTestFiles/freq/MPV.freq.txt
-
-#cat /broad/sankaranlab/elw/MathiesonAF/sep26.filtered.freqs/MPV.txt | awk '{print $1, $6, $4, $5, $7, $3, $2}' | sed 's/ /\t/g' >> /broad/sankaranlab/elw/MathiesonAF/PolyTestFiles/freq/MPV.freq.txt
-
-
-
-#awk 'FNR==NR { a[$3]; next } ($1 in a) {print $0}' /broad/sankaranlab/elw/LD_clump/new/clumps/min.old/min.MPV.clumps.filtered.txt /broad/sankaranlab/elw/MathiesonAF/all_freqs_UKID.txt > /broad/sankaranlab/elw/MathiesonAF/sep26.filtered.freqs/MPV.txt
